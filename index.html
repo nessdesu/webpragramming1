@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>What Should I Read Next? Book recommendations from readers like you</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-reboot.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="header">
+            <div class="header2">
+                <div class="header-left d-flex align-items-center">
+                    <a href="#" onclick="return false;" class="header-btn" ;>Books </a>
+                    <a href="#" onclick="return false;" class="header-otherBtns" style="margin-left: 30px;">Quotes</a>
+                    <a href="#" onclick="return false;" class="header-otherBtns" style="margin-left: 30px;">Blog</a>
+                    <a href="aboutMe.html" class="header-otherBtns" style="margin-left: 30px;">About Me</a>
+                </div>
+                <div class="header-middle">
+                    <img class="header-img" src="images/header.png" />
+                </div>
+                <div class="header-right d-flex align-items-center">
+                    <button class="btn" onclick="return false;" style="font-size:18px !important;margin-right:22px;">&#128081 Premium</button>
+                    <button class="btn border signin" onclick="return false;">Sign In</button>
+                    <button class="btn singup" style="background-color: #E7B366" onclick="return false;">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="midPage">
+                <h2 class="text">Discover books you'll like!</h2>
+                <p class="txt-line">Enter a book you like and the site will analyse our huge database of real readers' favorite books to provide book recommendations and suggestions for what to read next.</p>
+                <div id="search-box">
+                    <div class="search-box-icon"></div>
+                    <input type="text" class="search-box-input" style="color: #F0F1F4" placeholder="Type the title or the author of a book you like to read & we take care of the rest..." />
+                </div>
+            </div>
+        </div>
+
+        <div class="subjects">
+            <h1 class="sbj-tittle">Populer Subjects</h1>
+            <div class="container">
+                <div class="row" style="margin-top:30px;">
+                    <div class="col-md-3 text-center">
+                        <button class="btn btnHover" style="height:90px;width:100%;border:1px solid;border-color:#ddd;margin:20px; font-size:18px;box-shadow:0 2px 8px 0 rgba(0,0,0,0.2);">Science Fiction</button>
+                        <button class="btn btnHover" style="height:90px;width:100%;border:1px solid;border-color:#ddd;margin:20px; font-size:18px;box-shadow:0 2px 8px 0 rgba(0,0,0,0.2);">Time Travel</button>
+                        <button class="btn btnHover" style="height:90px;width:100%;border:1px solid;border-color:#ddd;margin:20px; font-size:18px;box-shadow:0 2px 8px 0 rgba(0,0,0,0.2);">Frontier and Pioneer Life</button>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        <button class="btn btnHover" style="height:90px;width:100%;border:1px solid;border-color:#ddd;margin:20px; font-size:18px;box-shadow:0 2px 8px 0 rgba(0,0,0,0.2);">Human Alien Encounters</button>
+                        <button class="btn btnHover" style="height:90px;width:100%;border:1px solid;border-color:#ddd;margin:20px; font-size:18px;box-shadow:0 2px 8px 0 rgba(0,0,0,0.2);">Young Adult Fiction</button>
+                        <button class="btn btnHover" style="height:90px;width:100%;border:1px solid;border-color:#ddd;margin:20px; font-size:18px;box-shadow:0 2px 8px 0 rgba(0,0,0,0.2);">Historical Fiction</button>
+                    </div>
+                    <div class="col-md-3  text-center">
+                        <button class="btn btnHover" style="height:90px;width:100%;border:1px solid;border-color:#ddd;margin:20px; font-size:18px;box-shadow:0 2px 8px 0 rgba(0,0,0,0.2);">Adventure Stories</button>
+                        <button class="btn btnHover" style="height:90px;width:100%;border:1px solid;border-color:#ddd;margin:20px; font-size:18px;box-shadow:0 2px 8px 0 rgba(0,0,0,0.2);">Love Stories</button>
+                        <button class="btn btnHover" style="height:90px;width:100%;border:1px solid;border-color:#ddd;margin:20px; font-size:18px;box-shadow:0 2px 8px 0 rgba(0,0,0,0.2);">Dystopias</button>
+                    </div>
+                    <div class="col-md-3  text-center">
+                        <button class="btn btnHover" style="height:90px;width:100%;border:1px solid;border-color:#ddd;margin:20px; font-size:18px;box-shadow:0 2px 8px 0 rgba(0,0,0,0.2);">Fantasy Fiction</button>
+                        <button class="btn btnHover" style="height:90px;width:100%;border:1px solid;border-color:#ddd;margin:20px; font-size:18px;box-shadow:0 2px 8px 0 rgba(0,0,0,0.2);">Romance</button>
+                        <button class="btn btnHover" style="height:90px;width:100%;border:1px solid;border-color:#ddd;margin:20px; font-size:18px;box-shadow:0 2px 8px 0 rgba(0,0,0,0.2);">Thrillers & Suspense </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="pinkMid">
+                <h2 class="tittle" style="margin-top: -50px;margin-bottom: 50px;">Featured Quotes</h2>
+                <p class="whiteLine" style="margin-top:-30px; margin-bottom:50px; margin-left: 870px !important;margin-right: 875px !important;"></p>
+                <blockquote class="blockquote">
+                    <span style="display:block;font-size:45px; font-weight:500; line-height:58px;">You see persons and things not as they are but as you are.</span>
+                    <cite style="display:block; font-size:18px; font-style:italic; margin-top:20px; line-height:22px;">— Anthony de Mell</cite>
+                </blockquote>
+                <button class="btn" style="background-color:#fff !important; padding:8px 20px !important; margin-left:46%;margin-top:30px;box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.05); ">Search Quotes</button>
+            </div>
+        </div>
+
+        <div class="blog">
+            <a href="#" onclick="return false" class="lBlog" ;>Latest from the Blog</a>
+            <p class="blogLine" style="margin-top:20px; margin-bottom:50px; margin-left: 870px !important;margin-right: 875px !important;"></p>
+            <div class="row justify-content-center" style="margin-right:auto;margin-left:auto;width:80%;">
+                <div class="col-md-5 colHover" style="border:1px solid;border-color:#ddd;margin:20px; box-shadow:0 2px 8px 0 rgba(0,0,0,0.2); border-radius:3px;">
+                    <div class="row">
+                        <div class="col-md-3 banner" style="background-image:url(images/banner1.png)">
+                        </div>
+                        <div class="col-md-9 text-left" style="padding-left: 20px;padding-top: 10px;padding-bottom: 15px;">
+                            <p style="color:black !important;margin-top:10px;margin-bottom:0px;">November 27th, 2020</p>
+                            <a href="#" onclick="return false;"><h4 style="font-weight:600">December Book Club and AMA with Rachel Joyce</h4></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 colHover" style="border:1px solid;border-color:#ddd;margin:20px;box-shadow:0 2px 8px 0 rgba(0,0,0,0.2); border-radius:3px;">
+                    <div class="row">
+                        <div class="col-md-3 banner" style="background-image:url(images/banner2.png)">
+                        </div>
+                        <div class="col-md-9 text-left" style="padding-left: 20px;padding-top: 10px;padding-bottom: 43px;">
+                            <p style="color:black !important;margin-top:10px;margin-bottom:0px;">November 23rd, 2020</p>
+                            <a href="#" onclick="return false;"><h4 style="font-weight:600">A conversation with Deepa Anappara</h4></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 colHover" style="border:1px solid;border-color:#ddd;margin:20px;box-shadow:0 2px 8px 0 rgba(0,0,0,0.2); border-radius:3px;">
+                    <div class="row">
+                        <div class="col-md-3 banner" style="background-image:url(images/banner2.png)">
+                        </div>
+                        <div class="col-md-9 text-left" style="padding-left: 20px;padding-top: 10px;padding-bottom: 15px;">
+                            <p style="color:black !important;margin-top:10px;margin-bottom:0px;">October 29th, 2020</p>
+                            <a href="#" onclick="return false;"><h4 style="font-weight:600">November Book Club and AMA with Deepa Anappara</h4></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 colHover" style="border:1px solid;border-color:#ddd;margin:20px;box-shadow:0 2px 8px 0 rgba(0,0,0,0.2); border-radius:3px;">
+                    <div class="row">
+                        <div class="col-md-3 banner" style="background-image:url(images/banner3.png)">
+                        </div>
+                        <div class="col-md-9 text-left" style="padding-left: 20px;padding-top: 10px;padding-bottom: 43px;">
+                            <p style="color:black !important;margin-top:10px;margin-bottom:0px;">October 23rd, 2020</p>
+                            <a href="#" onclick="return false;"><h4 style="font-weight:600">In Conversation with Robert Dugoni</h4></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="justify-content-center"  style="margin-top:70px;">
+            <div class="col-md-12 text-center">
+                <h5 style="font-weight:600">Join for free to save your favorite books!</h5>
+                <p class="blogLine" style="margin-top:20px; margin-bottom:20px; margin-left: 870px !important;margin-right: 875px !important;"></p>
+                <p style="font-size:13px; color:rgba(128, 128, 128, 1)">You can add to and delete from your list(s) at any time.</p>
+                <input type="email" class="d-flex email" style="margin-left:auto;margin-right:auto;margin-top:30px;margin-bottom:30px;" placeholder="Email Address" />
+                <button class="btn d-inline-block text-center" style="background-color:#E7B366;font-size:16px;font-weight:600;box-shadow:0px 2px 5px 1px rgba(231,179,102,0.72);height:40px;width: 600px;margin-left: auto;margin-right:auto; margin-top:-15px;"><p class="text-center" style="color:white;">Continue</p></button>
+            </div>
+        </div>
+
+        <div class="mainFooter">
+            <div class="headFooter">
+                <div class="flex-column">
+                    <h2 style="color:#111;font-weight:600;position:relative;margin-top:-75px;">Ask Me Anything</h2>
+                    <p style="width: 600px; color:#4e4e4e; font-size:20px; font-weight:400; margin: 15px 0 20px 0;">Each month there is a live monthly Q&A with a wide range of interesting authors. This is your opportunity to understand your favourite books on a much more personal level.</p>
+                    <button class="btn d-inline-block" style="background-color:#E7B366;font-size:16px;font-weight:600;box-shadow:0px 2px 5px 1px rgba(231,179,102,0.72);height:40px;margin-left:auto;margin-right:auto;padding-left:35px;padding-right:35px;"><p class="text-center" style="color:white;">View Upcoming AMAs</p></button>
+                </div>
+             </div>
+         </div>
+
+        <div class="Footer" style="padding:10px;">
+            <a href="#" onclick="return false" class="Footer" style="margin-top:5px;margin-right:30px;color:#999999;font-size:15px">WSIRN Community</a>
+            <a href="#" onclick="return false" class="Footer" style="margin-top:5px;margin-right:30px;color:#999999;font-size:15px">BookSync</a>
+            <a href="#" onclick="return false" class="Footer" style="margin-top:5px;margin-right:30px;color:#999999;font-size:15px">About</a>
+            <a href="#" onclick="return false" class="Footer" style="margin-top:5px;margin-right:30px;color:#999999;font-size:15px">Help</a>
+            <a href="#" onclick="return false" class="Footer" style="margin-top:5px;margin-right:30px;color:#999999;font-size:15px">Contact Us</a>
+            <a href="#" onclick="return false" class="Footer" style="margin-top:5px;margin-right:30px;color:#999999;font-size:15px">Terms and Conditions</a>
+            <a href="#" onclick="return false" class="Footer" style="margin-top:5px;margin-right:30px;color:#999999;font-size:15px">Community Guidelines</a>
+            <a href="#" onclick="return false" class="Footer" style="margin-top:5px;margin-right:30px;color:#999999;font-size:15px">Pravicy Policy</a>
+            <div class="col-md-12 text-center">
+                <button type="button" class="btn btn-primary" style="padding:5px;padding-top:0px;padding-bottom:0px;font-weight:600;font-size:15px;margin-top:20px;"><i class="fa fa-thumbs-up" style="margin-right:5px;"></i>Like 3.7k</button>
+                <button type="button" class="btn btn-primary" style="padding-top:0px;padding-bottom:0px;font-weight:600;font-size:15px;margin-top:20px;">Share</button>
+                <p style="color: #999999;font-size:13px; margin-top:15px;margin-bottom:0px;">© WSIRN 2020, Made with ❤ in Tokyo & Bali. As an Amazon affiliate, WSIRN earns from qualifying purchases.</p>
+            </div>
+        </div>
+</form>
+</body>
+
+</html>
+
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $('.dropdown-toggle').dropdown()
+    });
+
+</script>
+
+
